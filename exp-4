@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    char op;
+
+    printf("Enter an operator: ");
+    scanf("%c", &op);
+
+    switch(op)
+    {
+        case '+':
+        case '-':
+        case '*':
+        case '/':
+            printf("Valid Arithmetic Operator\n");
+            break;
+
+        default:
+            printf("Invalid Operator\n");
+    }
+
+    return 0;
+}
+
+OUTPUT:
+Enter an operator: *
+Valid Arithmetic Operator
